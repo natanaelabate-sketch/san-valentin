@@ -48,7 +48,7 @@
       border: none;
       border-radius: 50px;
       padding: 14px 24px;
-      font-size: 1rem;
+      font-size: 1.6rem;
       cursor: pointer;
       transition: all 0.35s ease;
       position: absolute;
@@ -87,7 +87,7 @@
 
 <body>
   <div class="card" id="card">
-    <h1>💖 ¿Querés pasar San Valentín conmigo? 💖</h1>
+    <h1>💖 Valen, ¿Querés pasar San Valentín conmigo? 💖</h1>
     <p id="text">Prometo comida rica y mucho amor</p>
 
     <div class="buttons">
@@ -140,11 +140,18 @@
     });
 
     yesBtn.addEventListener("click", () => {
-      card.innerHTML = `
-        <h1 class="success">💘 SABÍA QUE IBAS A DECIR QUE SÍ 💘</h1>
-        <p>Te amo ❤️<br>Feliz San Valentín</p>
-      `;
-    });
+  card.innerHTML = `
+    <h1 class="success">💘 SABÍA QUE IBAS A DECIR QUE SÍ 💘</h1>
+    <p>Te amo ❤️<br>Feliz San Valentín <br>-Nata</p>
+
+    <img 
+      src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHlneWtwdm5wYnVuMmRlNjhnYWJuNWZqcDdnZWttNzJpZXI2aDdlMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fOqzMnu0EhxmM/giphy.gif"
+      alt="Snoopy love"
+      style="width: 100%; max-width: 250px; margin-top: 20px; border-radius: 12px;"
+    />
+  `;
+});
+
   </script>
 </body>
 </html>
